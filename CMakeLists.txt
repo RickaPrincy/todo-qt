@@ -19,6 +19,8 @@ set(PROJECT_SOURCES
     src/main_window.ui
     src/components/todo_manager.cpp
     src/components/todo_manager.h
+    src/components/todo.h
+    src/components/todo.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -34,6 +36,7 @@ else()
     else()
         add_executable(todo
             ${PROJECT_SOURCES}
+            src/components/todo.h src/components/todo.cpp
         )
     endif()
 endif()
