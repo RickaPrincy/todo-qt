@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>772</width>
+    <height>397</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: #f3f3f3</string>
+    <string notr="true">background-color: #f5f5f5</string>
    </property>
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -43,7 +43,7 @@ font-size: 20px;</string>
       <x>10</x>
       <y>50</y>
       <width>751</width>
-      <height>31</height>
+      <height>34</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -51,6 +51,9 @@ font-size: 20px;</string>
       <widget class="QLineEdit" name="input_description">
        <property name="toolTip">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">padding: 3px 10px;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -65,11 +68,14 @@ font-size: 20px;</string>
        <property name="toolTip">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
+       <property name="styleSheet">
+        <string notr="true">padding: 3px 10px;</string>
+       </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
        <property name="placeholderText">
-        <string>Todo name</string>
+        <string>Todo description</string>
        </property>
       </widget>
      </item>
@@ -77,7 +83,7 @@ font-size: 20px;</string>
       <widget class="QPushButton" name="addButton">
        <property name="styleSheet">
         <string notr="true">color: black;
-opacity: 0.8;</string>
+padding: 3px 40px;</string>
        </property>
        <property name="text">
         <string>add</string>
@@ -85,6 +91,16 @@ opacity: 0.8;</string>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>751</width>
+      <height>281</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
