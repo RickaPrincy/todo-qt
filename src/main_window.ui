@@ -27,8 +27,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue;
-font-size: 20px;</string>
+     <string notr="true">font-size: 20px;
+font-weight: bold;
+color: black;</string>
     </property>
     <property name="text">
      <string>Welcome to Ricka's Todos</string>
@@ -48,7 +49,7 @@ font-size: 20px;</string>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLineEdit" name="input_name">
+      <widget class="QLineEdit" name="inputName">
        <property name="toolTip">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
@@ -64,7 +65,7 @@ font-size: 20px;</string>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="input_description">
+      <widget class="QLineEdit" name="inputDescription">
        <property name="toolTip">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
@@ -92,7 +93,7 @@ padding: 3px 40px;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTableWidget" name="todosTables">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -103,7 +104,6 @@ padding: 3px 40px;</string>
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

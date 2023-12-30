@@ -17,10 +17,6 @@ set(PROJECT_SOURCES
     src/main_window.cpp
     src/main_window.h
     src/main_window.ui
-    src/components/todo_manager.cpp
-    src/components/todo_manager.h
-    src/components/todo.h
-    src/components/todo.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -29,16 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
     )
 else()
-    if(ANDROID)
-        add_library(todo SHARED
-            ${PROJECT_SOURCES}
-        )
-    else()
-        add_executable(todo
-            ${PROJECT_SOURCES}
-            src/components/todo.h src/components/todo.cpp
-        )
-    endif()
+    add_executable(todo ${PROJECT_SOURCES})
 endif()
 
 target_link_libraries(todo PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

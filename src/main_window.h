@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "components/todo_manager.h"
+#include <QTableWidgetItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,9 +20,7 @@ public:
 
 private slots:
     void on_addButton_clicked();
-
 private:
     Ui::MainWindow *ui;
-    TodoManager todo_manager{};
 };
 #endif // MAINWINDOW_H
