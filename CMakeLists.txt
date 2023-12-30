@@ -17,6 +17,8 @@ set(PROJECT_SOURCES
     src/main_window.cpp
     src/main_window.h
     src/main_window.ui
+    src/components/todo_manager.cpp
+    src/components/todo_manager.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

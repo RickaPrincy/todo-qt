@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>772</width>
+    <width>773</width>
     <height>397</height>
    </rect>
   </property>
@@ -48,7 +48,7 @@ font-size: 20px;</string>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLineEdit" name="input_description">
+      <widget class="QLineEdit" name="input_name">
        <property name="toolTip">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
@@ -64,7 +64,7 @@ font-size: 20px;</string>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="input_name">
+      <widget class="QLineEdit" name="input_description">
        <property name="toolTip">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
